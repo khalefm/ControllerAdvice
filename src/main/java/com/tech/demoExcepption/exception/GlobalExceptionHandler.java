@@ -16,7 +16,7 @@ public class GlobalExceptionHandler {
 
         Map<String, Object> body = new HashMap<>();
 
-        body.put("status", HttpStatus.NOT_FOUND);
+        body.put("status", HttpStatus.NOT_FOUND.value());
         body.put("error", "Resource Not Found");
         body.put("message", ex.getMessage());
         body.put("timestamp", System.currentTimeMillis());
